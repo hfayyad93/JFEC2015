@@ -10,6 +10,7 @@
 #' @param regularization_paramter lambda value
 #' @return A list containing PredL, PredXB, PredG and Bes
 #' @export
+library(ncvreg)
 Estimation_Function<-function(Y,AX,LAB,k,ks,regularization_parameter=0.1){
   num_labels <- length(ks)
   N <- nrow(Y)
