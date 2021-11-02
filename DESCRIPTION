@@ -2,17 +2,19 @@ Package: JFEC2015
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
+    person(given = "Tomohiro",
+           family = "Ando",
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Depends:
+	R (>=3.1.0),
+	ncvreg (>= 3.13.0)
+License: GPL-2
+Imports:
+	ncvreg (>= 3.13.0)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Imports:
-	ncvreg (>= 3.10.0)
+
