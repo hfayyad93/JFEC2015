@@ -23,7 +23,7 @@ Estimation_Function<-function(Y,AX,LAB,k,ks,regularization_parameter=0.1){
   
   for(j in 1:Nc){
     X <- AX[,(p*(j-1)+1):(p*j)]; y <- Y[,j]
-    fit <- ncvreg(X, y, family="gaussian", penalty="SCAD",lambda=c(1,regularization_parameter))
+    fit <- ncvreg::ncvreg(X, y, family="gaussian", penalty="SCAD",lambda=c(1,regularization_parameter))
     Bes[,j] <- (fit$beta)[,2]
     PredXB[,j] <- cbind(1,X)%*%as.vector(Bes[,j])
   }
@@ -80,7 +80,7 @@ Estimation_Function<-function(Y,AX,LAB,k,ks,regularization_parameter=0.1){
     
     for(j in 1:Nc){
       X <- AX[,(p*(j-1)+1):(p*j)]; y <- Y[,j]
-      fit <- ncvreg(X, y, family="gaussian", penalty="SCAD",lambda=c(1,regularization_parameter))
+      fit <- ncvreg::ncvreg(X, y, family="gaussian", penalty="SCAD",lambda=c(1,regularization_parameter))
       Bes[,j] <- (fit$beta)[,2]
       PredXB[,j] <- cbind(1,X)%*%as.vector(Bes[,j])
     }
