@@ -4,7 +4,7 @@
 \alias{Estimation_Function}
 \title{Estimate}
 \usage{
-Estimation_Function(Y, AX, LAB, k, ks, regularization_parameter = 0.1)
+Estimation_Function(Y, AX, LAB, k, ks, lambda = 0.1)
 }
 \arguments{
 \item{Y}{Matrix of the output variable rows=length of time series, cols=number of individuals}
@@ -17,7 +17,7 @@ Estimation_Function(Y, AX, LAB, k, ks, regularization_parameter = 0.1)
 
 \item{ks}{vector of number of group specific factors}
 
-\item{regularization_paramter}{lambda value}
+\item{lambda}{regularization parameter}
 }
 \value{
 A list containing PredL, PredXB, PredG and Bes
