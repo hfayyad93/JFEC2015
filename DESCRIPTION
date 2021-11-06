@@ -4,8 +4,12 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Tomohiro",
            family = "Ando",
-           email = "hfayyad93@gmail.com",
-           role = c("aut", "cre"))
+           email = "T.Ando@mbs.edu",
+           role = c("aut", "cre")),
+    person(given = "Hani",
+           family = "Fayad",
+           email = "han.fayad@mbs.edu",
+           role = c("aut"))
 Description: What the package does (one paragraph).
 Imports:
 	ncvreg (>= 3.13.0)
